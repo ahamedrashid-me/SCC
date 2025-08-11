@@ -50,9 +50,14 @@ Installation
 SuperCode is currently under development. The SuperCode compiler, which translates .su files into native binaries, is available for download on the releases page.
 
 # Example: Download the compiler and add to your PATH
-wget https://github.com/your-repo/supercode/releases/download/v0.1/sc_compiler-v0.1.zip
-unzip sc_compiler-v0.1.zip
-export PATH=$PATH:$(pwd)/sc_compiler
+wget [https://github.com/ahamedrashid-me/SCC/releases/tag/releasv0.01]
+
+unzip 
+
+export PATH=$PATH:$(pwd)/scc supm 
+
+or sudo chmod 777 scc supm
+mv sccsupm /bin
 
 Writing Your First Program
 
@@ -69,7 +74,7 @@ run {
     val num FIVE = 5;
     
     // Call the function and store the result in a new variable
-    var num my_result = @add_numbers[FIVE, 10];
+    num my_result = @add_numbers[5, 10];
     
     // Use advanced string interpolation to print the result to the console
     @print["The result is: ${my_result}"];
@@ -80,7 +85,7 @@ Compilation and Execution
 To compile and run your SuperCode program, use the sc compiler from your terminal. The compiler will produce a native executable file.
 
 # Compile the file using the 'sc compile' command
-sc compile hello.su   
+scs compile hello.su   
 
 # Run the compiled binary
 ./hello
@@ -104,19 +109,17 @@ The next major areas of focus for the SuperCode project are:
 
     Improving Error Messages: Enhancing the compiler to provide more specific, actionable feedback.
 
-    Implementing a Package Manager: Creating a system to easily manage and share SuperCode libraries.
+    
 
 Contributing
 
 We welcome contributions! Please feel free to open issues or submit pull requests.
 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License 
 
-this is a compiler for SuperCode Programming Languages.
 
 <img width="1144" height="1428" alt="image" src="https://github.com/user-attachments/assets/b8146670-41e3-4492-a4d1-7aa0288d45f2" />
 
-### supm - supercode package manager
 
 <img width="1354" height="1348" alt="image" src="https://github.com/user-attachments/assets/465f3e30-274d-41a7-a233-2f5f5fcdf2aa" />
